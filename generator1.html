@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Generator imion kurzych</title>
+</head>
+
+<style>
+    body {
+        background-image: url('background.jpg');
+    }
+</style>
+
+<script>
+    function generate() {
+        document.getElementById("generation").textContent = 'kura' + Math.floor(Math.random() * Math.floor(1000));
+    }
+</script>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="mx-auto">
+            <h1 style="color: magenta">Kategoria: Liczba</h1>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <div class="row">
+        <div class="mx-auto">
+            <button onclick="generate()" class="btn btn-primary btn-lg">Wygeneruj</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="mx-auto">
+            <h2 id="generation"></h2>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="mx-auto">
+            <a href="index.html" type="button" class="btn btn-danger btn-lg">Cofnij</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

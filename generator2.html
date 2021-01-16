@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Generator imion kurzych</title>
+</head>
+
+<style>
+    body {
+        background-image: url('background.jpg');
+    }
+</style>
+
+<script>
+    const names = [
+        "Curry",
+        "Stokrotka",
+        "Pałeczka do gry na bębnie",
+        "Makaron",
+        "Frittata",
+        "Kung Pao",
+        "Margaret Hatcher",
+        "Marsala",
+        "Meryl Cheep",
+        "Samorodek",
+        "Ćwierkanie",
+        "Piccata",
+        "Rosie",
+        "Rubin",
+        "Śnieżna kula",
+        "Tandoori",
+        "Teriyaki",
+        "Yolkahontas",
+        "Benedykt",
+        "Bawół",
+        "Nerkowiec",
+        "Pułkownik Sanders",
+        "Chrupiący",
+        "Curry",
+        "krem",
+        "Otomana",
+        "Pałeczka do gry na bębnie",
+        "Kluska",
+        "Egg Nog",
+        "Frittata",
+        "Hot Wing",
+        "Kabob",
+        "Kung Pao",
+        "Marsala",
+        "Makaron",
+        "Samorodek",
+        "Omlet",
+        "Parmezan",
+        "Pierożek",
+        "Ćwierkanie",
+        "Piccata",
+        "Ciasto",
+        "Sezam",
+        "Tandoori",
+        "Delikatny",
+        "Teriyaki",
+        "Quiche",
+        "Winner Winner (Chicken Dinner)",
+        "Albert Eggstein",
+        "Amelia Egghart",
+        "Attila the Hen",
+        "Laska Jagger",
+        "Cluck Kent",
+        "Cluck Norris",
+        "Cluck Rogers",
+        "Hen Solo",
+        "Margaret Hatcher",
+        "Meryl Cheep",
+        "Obi Wan Henobi",
+        "Księżniczka Lay-a",
+        "Sir Clucks-A-Lot",
+        "Dzioby tyranozaura",
+        "Yolkahontas",
+        "Yolko Ono",
+    ]
+
+    function generate() {
+        document.getElementById("generation").textContent = names[Math.floor(Math.random() * names.length)];
+    }
+</script>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="mx-auto">
+            <h1 style="color: magenta">Kategoria: Kurze</h1>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <div class="row">
+        <div class="mx-auto">
+            <button onclick="generate()" class="btn btn-primary btn-lg">Wygeneruj</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="mx-auto">
+            <h2 id="generation"></h2>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="mx-auto">
+            <a href="index.html" type="button" class="btn btn-danger btn-lg">Cofnij</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
